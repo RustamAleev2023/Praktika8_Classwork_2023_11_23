@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        task1();
-        task2();
+//        task2();
+        task3();
     }
 
     //Task1
@@ -30,6 +31,30 @@ public class Main {
                     System.out.print("*");
                 } else {
                     if(j == 0 || j == n - 1){
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+    //Task3
+    public static void task3(){
+        System.out.println("Введите длину прямоугольника");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        System.out.println("Введите ширину прямоугольника");
+        int h = scanner.nextInt();
+
+        for (int i = 0; i < h; i++) {
+            for (int j = 0; j < l; j++) {
+                if(i == 0 || i == h-1){
+                    System.out.print("*");
+                } else {
+                    if(j == 0 || j == l - 1){
                         System.out.print("*");
                     } else {
                         System.out.print(" ");
